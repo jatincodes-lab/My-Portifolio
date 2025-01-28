@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <canvas id="interactive-canvas"></canvas>
     <header>
       <nav>
         <div class="leftNav"><h3>Jatin's Porfolio</h3></div>
@@ -149,44 +150,13 @@
             ><a href="mailto:jatin.bly1@gmail.com"><h3>Email</h3></a>
           </div>
           <div class="details">
-            <i class="fa-brands fa-x-twitter"></i>
-            <h3>Twitter</h3>
+            <i class="fa-brands fa-x-twitter"></i
+            ><a href="https://x.com/6_jatin3"> <h3>Twitter</h3></a>
           </div>
         </div>
       </section>
     </main>
     <footer><p>Copyright: © 2025 Jatin. All rights reserved.</p></footer>
-    <script>
-      // Reset scroll position on page reload
-      window.onload = function () {
-        window.scrollTo(0, 0);
-      };
-
-      // Disable browser's automatic scroll restoration
-      if ("scrollRestoration" in history) {
-        history.scrollRestoration = "manual";
-      }
-
-      document.querySelectorAll(".cta-btn").forEach((button) => {
-        button.addEventListener("click", (e) => {
-          e.preventDefault();
-          const target = document.querySelector(button.getAttribute("href"));
-          target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        });
-      });
-
-      // Add hover effect to buttons
-      document.querySelectorAll(".cta-btn").forEach((button) => {
-        button.addEventListener("mouseenter", () => {
-          button.style.transform = "translateY(-3px)";
-        });
-        button.addEventListener("mouseleave", () => {
-          button.style.transform = "translateY(0)";
-        });
-      });
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
