@@ -79,7 +79,6 @@ section {
 }
 
 .hero {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -95,9 +94,6 @@ section {
   margin-right: 4rem;
 }
 
-.grey {
-  color: grey;
-} 
 
 .projects h1 {
   margin: 0;
@@ -110,7 +106,6 @@ section {
 }
 
 .projects-cards {
-  width: 100%;
   display: flex;
   /* justify-content: space-evenly; */
   align-items: center;
@@ -369,3 +364,4 @@ footer {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(123, 102, 183, 0.3);
 }
+
