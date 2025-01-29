@@ -302,7 +302,7 @@ footer {
 
   .leftHero {
     order: 2;
-    margin-top: 2rem;
+    margin: 2rem 0 0 0;
   }
 
   .rightHero {
@@ -345,7 +345,7 @@ footer {
   font-weight: 600;
   transition: all 0.3s ease;
   display: inline-block;
-  margin: 0 10px 0 0;
+  margin: 10px 10px 0 0;
 }
 
 .cta-btn.primary {
